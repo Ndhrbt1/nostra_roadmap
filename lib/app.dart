@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:nostra_roadmap/ui_screens/counter_statefull.dart';
-import 'package:nostra_roadmap/ui_screens/b.responsive.dart';
+// import 'package:nostra_roadmap/ui_screens/b.responsive.dart';
+import 'package:nostra_roadmap/ui_screens/c.scroll_to_index.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -15,7 +16,8 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       // home: const CounterStatefull(),
-      home: const Responsive(),
+      // home: const Responsive(),
+      home: const ScrollToIndex(),
     );
   }
 }
