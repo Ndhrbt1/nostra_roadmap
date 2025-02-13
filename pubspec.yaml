@@ -14,6 +14,7 @@ dependencies:
 
   cupertino_icons: ^1.0.8
   scroll_to_index: ^3.0.1
+  states_rebuilder: ^6.4.0
 
 dev_dependencies:
   flutter_test:

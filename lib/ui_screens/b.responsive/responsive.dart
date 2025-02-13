@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:nostra_roadmap/ui_screens/widgets/horizontal.dart';
+import 'package:nostra_roadmap/ui_screens/b.responsive/widgets/c.horizontal.dart';
 
-import 'package:nostra_roadmap/ui_screens/widgets/vertical.dart';
+import 'package:nostra_roadmap/ui_screens/b.responsive/widgets/d.vertical.dart';
 
 class Responsive extends StatelessWidget {
   const Responsive({super.key});

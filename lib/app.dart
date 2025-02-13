@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 // import 'package:nostra_roadmap/ui_screens/counter_statefull.dart';
 // import 'package:nostra_roadmap/ui_screens/b.responsive.dart';
-import 'package:nostra_roadmap/ui_screens/c.scroll_to_index.dart';
+// import 'package:nostra_roadmap/ui_screens/c.scroll_to_index.dart';
+import 'package:nostra_roadmap/ui_screens/d.counter.state.management/c.counter.sm.view.dart';
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
       ),
       // home: const CounterStatefull(),
       // home: const Responsive(),
-      home: const ScrollToIndex(),
+      // home: const ScrollToIndex(),
+      home: const CounterSM(),
     );
   }
 }

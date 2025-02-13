@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nostra_roadmap/ui_widgets/icon_btn_responsive.dart';
+import 'package:nostra_roadmap/ui_widgets/icon.btn.responsive.dart';
 
 class RightContainer extends StatelessWidget {
   const RightContainer({
