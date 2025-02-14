@@ -10,15 +10,10 @@ class ProductView extends StatelessWidget {
         preferredSize: Size.fromHeight(56),
         child: ProductAppbar(),
       ),
-      floatingActionButton: ProductFab(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ProductCharlie(),
-            ProductDelta(),
-            ProductEcho(),
-          ],
+          children: [],
         ),
       ),
     );
