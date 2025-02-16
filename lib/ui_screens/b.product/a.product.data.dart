@@ -6,4 +6,11 @@ class ProductData {
   final rxCounter = 0.inj();
 
   final rxRandom = Prov.sample.st.rxRandom;
+
+  final rxProductList = RM.inject<List<Product>>(
+    () => [],
+    sideEffects: SideEffects(
+      initState: () => _ct.getAllProducts(),
+    ),
+  );
 }

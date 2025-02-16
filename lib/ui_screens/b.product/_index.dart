@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:nostra_roadmap/dt_domains/_models/_index.dart';
 import 'package:states_rebuilder/states_rebuilder.dart';
 
 import '../../app/_index.dart';
@@ -17,4 +18,3 @@ part 'widgets/e.product.echo.dart';
 
 ProductData get _dt => Data.product.st;
 ProductCtrl get _ct => Ctrl.product;
-
