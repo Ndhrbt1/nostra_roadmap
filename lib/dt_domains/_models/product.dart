@@ -48,6 +48,16 @@ class Product {
     );
   }
 
+  static Product add() {
+    return Product(
+      id: '00003',
+      name: 'Keyboard',
+      price: 11223,
+      qty: 30,
+      createdAt: DateTime.now().toString(),
+    );
+  }
+
   // * ---------------------------------------
 
   Product copyWith({

@@ -10,6 +10,7 @@ class ProductView extends StatelessWidget {
         preferredSize: Size.fromHeight(56),
         child: ProductAppbar(),
       ),
+      floatingActionButton: const ProductFab(),
       body: OnBuilder.data(
         listenTo: _dt.rxProductList,
         builder: (data) => ListView(
