@@ -58,6 +58,17 @@ class Product {
     );
   }
 
+  static Product update(Product product) {
+    return Product(
+      id: product.id,
+      name: 'updated product',
+      price: 99999,
+      qty: 99,
+      createdAt: product.createdAt,
+      updatedAt: DateTime.now().toString(),
+    );
+  }
+
   // * ---------------------------------------
 
   Product copyWith({

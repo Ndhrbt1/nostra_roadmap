@@ -21,6 +21,18 @@ class ProductView extends StatelessWidget {
                 child: ListTile(
                   title: Text(data[index].name),
                   subtitle: Text(Fun.formatRupiah.format(data[index].price)),
+                  leading: Text(data[index].id),
+                  trailing: Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      IconButton(
+                        onPressed: () {
+                          _ct.updateProduct(data[index]);
+                        },
+                        icon: const Icon(Icons.update),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             )
