@@ -26,14 +26,22 @@ class ProductCtrl {
 // * adding data into List<Product>
   addProduct() {
     _dt.rxProductList.st = [..._dt.rxProductList.st]..insert(0, Product.add());
+    return _dt.rxProductList.st;
   }
 
-// * updated
+// * update
   updateProduct(Product product) {
     final newProduct = Product.update(product);
     final index = _dt.rxProductList.st.indexWhere((element) => element.id == product.id);
     _dt.rxProductList.setState((s) => s[index] = newProduct);
     logx.i(_dt.rxProductList.st[index].toString());
     return _dt.rxProductList.st[index];
+  }
+
+  // *delete
+  deleteProduct(int index) {
+    _dt.rxProductList.st.removeAt(index);
+    logx.i(index.toString());
+    logx.i(_dt.rxProductList.st.toString());
   }
 }
