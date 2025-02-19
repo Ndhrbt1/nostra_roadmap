@@ -54,9 +54,31 @@ class ProductView extends StatelessWidget {
                             ),
                           ],
                         ),
+                        onTap: () {
+                          _ct.getReadProductDetail(data[index]);
+                        },
                       ),
                     ),
-                  )
+                  ),
+                  OnReactive(
+                    () => Center(
+                      child: Container(
+                        height: 400,
+                        width: 400,
+                        color: Colors.grey.shade900,
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text('${_dt.rxProduct.st?.id}'),
+                            Text('${_dt.rxProduct.st?.name}'),
+                            Text('${_dt.rxProduct.st?.price}'),
+                            Text('${_dt.rxProduct.st?.createdAt}'),
+                            Text('${_dt.rxProduct.st?.updatedAt}'),
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
       ),

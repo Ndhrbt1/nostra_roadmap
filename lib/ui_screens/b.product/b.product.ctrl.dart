@@ -37,10 +37,21 @@ class ProductCtrl {
     return _dt.rxProductList.st[index];
   }
 
-  // *delete
+  // * delete
   deleteProduct(int index) {
     _dt.rxProductList.st.removeAt(index);
     logx.i(index.toString());
     logx.i(_dt.rxProductList.st.toString());
+  }
+
+  // * read detail
+  readProductDetail(Product product) {
+    final index = _dt.rxProductList.st.indexWhere((element) => element.id == product.id);
+    debugPrint(_dt.rxProductList.st[index].toString());
+    return _dt.rxProductList.st[index];
+  }
+
+  getReadProductDetail(Product product) {
+    _dt.rxProduct.st = _ct.readProductDetail(product);
   }
 }

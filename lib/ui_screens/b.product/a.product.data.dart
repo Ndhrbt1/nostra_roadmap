@@ -7,12 +7,12 @@ class ProductData {
 
   final rxRandom = Prov.sample.st.rxRandom;
 
-  // * create var injected List<Product>
-
   final rxProductList = RM.inject<List<Product>>(
     () => [],
     sideEffects: SideEffects(
       initState: () => _ct.getAllProducts(),
     ),
   );
+
+  final rxProduct = RM.inject<Product?>(() => null);
 }
