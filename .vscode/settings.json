@@ -36,8 +36,6 @@
     "*nostra_roadmap": true,
     "*nostra_roadmap.*": true,
     "*pubspec": true,
-    "*pubspec.*": true,
-    "*README": true,
     "*README.*": true,
     "*test": true,
     "*test.*": true,

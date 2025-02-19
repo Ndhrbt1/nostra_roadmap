@@ -139,6 +139,4 @@ class Product {
   int get hashCode {
     return id.hashCode ^ name.hashCode ^ price.hashCode ^ qty.hashCode ^ createdAt.hashCode ^ updatedAt.hashCode;
   }
-
-  static generateWordPairs() {}
 }

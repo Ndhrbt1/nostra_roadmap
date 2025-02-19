@@ -25,8 +25,7 @@ class ProductCtrl {
 
 // * adding data into List<Product>
   addProduct() {
-    _dt.rxProductList.st = [..._dt.rxProductList.st]..insert(0, Product.add());
-    return _dt.rxProductList.st;
+    _dt.rxProductList.st = [..._dt.rxProductList.st]..insert(0, Product.random());
   }
 
 // * update
