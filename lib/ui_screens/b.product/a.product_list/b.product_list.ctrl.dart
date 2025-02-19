@@ -6,4 +6,6 @@ class ProductListCtrl {
   increaseCounter() => _dt.rxCounter.setState((s) => s + 1);
 
   updateRandom() => Serv.sample.updateRandom();
+
+  getReadAllProducts() => _sv.getReadAllProducts();
 }
