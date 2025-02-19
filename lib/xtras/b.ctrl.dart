@@ -6,4 +6,8 @@ abstract class Ctrl {
   static SampleDuaCtrl get sampleDua => SampleDuaCtrl();
   static SampleTigaCtrl get sampleTiga => SampleTigaCtrl();
   static ProductCtrl get product => ProductCtrl();
+  static ProductListCtrl get productList => ProductListCtrl();
+  static ProductDetailCtrl get productDetail => ProductDetailCtrl();
+  static ProductAddCtrl get productAdd => ProductAddCtrl();
+  static ProductEditCtrl get productEdit => ProductEditCtrl();
 }

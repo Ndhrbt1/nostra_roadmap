@@ -9,5 +9,9 @@ class RouteMap {
     Routes.sampleDua: (RouteData data) => const SampleDuaView(),
     Routes.sampleTiga: (RouteData data) => const SampleTigaView(),
     Routes.product: (RouteData data) => const ProductView(),
+    Routes.productList: (RouteData data) => const ProductListView(),
+    Routes.productDetail: (RouteData data) => const ProductDetailView(),
+    Routes.productAdd: (RouteData data) => const ProductAddView(),
+    Routes.productEdit: (RouteData data) => const ProductEditView(),
   };
 }
