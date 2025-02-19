@@ -15,4 +15,6 @@ class ProductData {
   );
 
   final rxProduct = RM.inject<Product?>(() => null);
+
+  final rxSelectedId = RM.inject<String>(() => '');
 }

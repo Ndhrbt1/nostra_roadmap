@@ -37,6 +37,7 @@ class ProductView extends StatelessWidget {
                             IconButton(
                               onPressed: () {
                                 _ct.updateProduct(data[index]);
+                                _ct.getReadProductDetail(data[index]);
                               },
                               icon: const Icon(Icons.update),
                             ),
@@ -55,8 +56,16 @@ class ProductView extends StatelessWidget {
                           ],
                         ),
                         onTap: () {
+                          _dt.rxProductList.setState(
+                            (s) {
+                              return null;
+                            },
+                          );
                           _ct.getReadProductDetail(data[index]);
+                          _ct.setSelectedId(data[index]);
                         },
+                        selected: data[index].id == _dt.rxSelectedId.st,
+                        selectedTileColor: Colors.purple,
                       ),
                     ),
                   ),

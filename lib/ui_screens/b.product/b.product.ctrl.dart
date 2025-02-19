@@ -51,7 +51,13 @@ class ProductCtrl {
     return _dt.rxProductList.st[index];
   }
 
+// * insert value into var rxProduct
   getReadProductDetail(Product product) {
     _dt.rxProduct.st = _ct.readProductDetail(product);
+  }
+
+// * insert value into var selectedId
+  setSelectedId(Product product) {
+    _dt.rxSelectedId.st = product.id;
   }
 }
