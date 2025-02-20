@@ -15,4 +15,8 @@ class ProductProv {
       initState: () => _sv.getReadAllProducts(),
     ),
   );
+
+  final rxProduct = RM.inject<Product?>(() => null);
+
+  final rxSelectedId = RM.inject<String>(() => '');
 }

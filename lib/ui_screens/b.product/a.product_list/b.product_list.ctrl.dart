@@ -8,4 +8,8 @@ class ProductListCtrl {
   updateRandom() => Serv.sample.updateRandom();
 
   getReadAllProducts() => _sv.getReadAllProducts();
+
+  getReadProductDetail(Product product) => _sv.getReadProductDetail(product);
+
+  setSelectedId(Product product) => _sv.setSelectedId(product);
 }

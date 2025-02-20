@@ -1,6 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
+import 'package:nostra_roadmap/dt_domains/_models/_index.dart';
 import 'package:nostra_roadmap/dt_domains/a.product/_index.dart';
 import 'package:states_rebuilder/states_rebuilder.dart';
 

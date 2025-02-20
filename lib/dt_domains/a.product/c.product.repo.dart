@@ -14,4 +14,10 @@ class ProductRepo {
     logx.i(product.toString());
     return product;
   }
+
+  Product readProductDetail(Product product) {
+    final index = _pv.rxProductList.st.indexWhere((element) => element.id == product.id);
+    logx.i(_pv.rxProductList.st[index].toString());
+    return _pv.rxProductList.st[index];
+  }
 }

@@ -23,11 +23,16 @@ class ProductListView extends StatelessWidget {
                     data.length,
                     (index) => Card(
                       child: ListTile(
+                        leading: Text(data[index].id),
                         title: Text(data[index].name),
                         subtitle: Text(Fun.formatRupiah.format(data[index].price)),
+                        onTap: () {
+                          _ct.getReadProductDetail(data[index]);
+                          _ct.setSelectedId(data[index]);
+                        },
                       ),
                     ),
-                  )
+                  ),
                 ],
               ),
       ),

@@ -16,4 +16,14 @@ class ProductServ {
   getReadAllProducts() {
     _pv.rxProductList.st = _rp.readAllProducts();
   }
+
+  getReadProductDetail(Product product) {
+    _pv.rxProduct.st = _rp.readProductDetail(product);
+  }
+
+  setSelectedId(Product product) {
+    _pv.rxSelectedId.st = product.id;
+    debugPrint(_pv.rxSelectedId.st);
+    nav.to(Routes.productDetail);
+  }
 }
