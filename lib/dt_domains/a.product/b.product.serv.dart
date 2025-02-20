@@ -25,4 +25,10 @@ class ProductServ {
     _pv.rxSelectedId.st = product.id;
     debugPrint(_pv.rxSelectedId.st);
   }
+
+  addProduct() => _rp.addProduct();
+
+  updateProduct(Product product) => _rp.updateProduct(product);
+
+  getUpdateProduct(Product product) => _pv.rxProduct.st = _sv.updateProduct(product);
 }

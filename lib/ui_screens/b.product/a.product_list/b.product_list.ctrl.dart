@@ -12,4 +12,6 @@ class ProductListCtrl {
   getReadProductDetail(Product product) => _sv.getReadProductDetail(product);
 
   setSelectedId(Product product) => _sv.setSelectedId(product);
+
+  addProduct() => _sv.addProduct();
 }

@@ -11,16 +11,18 @@ class ProductDetailView extends StatelessWidget {
         child: ProductDetailAppbar(),
       ),
       floatingActionButton: const ProductDetailFab(),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text('${_dt.rxProduct.st?.id}'),
-            Text('${_dt.rxProduct.st?.name}'),
-            Text('${_dt.rxProduct.st?.price}'),
-            Text('${_dt.rxProduct.st?.createdAt}'),
-            Text('${_dt.rxProduct.st?.updatedAt}')
-          ],
+      body: OnReactive(
+        () => Center(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Text('${_dt.rxProduct.st?.id}'),
+              Text('${_dt.rxProduct.st?.name}'),
+              Text('${_dt.rxProduct.st?.price}'),
+              Text('${_dt.rxProduct.st?.createdAt}'),
+              Text('${_dt.rxProduct.st?.updatedAt}')
+            ],
+          ),
         ),
       ),
     );

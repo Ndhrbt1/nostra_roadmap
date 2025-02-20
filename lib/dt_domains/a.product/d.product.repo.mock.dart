@@ -13,4 +13,10 @@ class ProductRepoMock implements ProductRepo {
 
   @override
   readProductDetail(Product product) => throw UnimplementedError();
+
+  @override
+  addProduct() => throw UnimplementedError();
+
+  @override
+  updateProduct(Product product) => throw UnimplementedError();
 }

@@ -6,10 +6,9 @@ class ProductDetailFab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FloatingActionButton(
-      child: const Icon(Icons.add),
+      child: const Icon(Icons.update),
       onPressed: () {
-        _ct.increaseCounter();
-        _ct.updateRandom();
+        _ct.getUpdateProduct(_dt.rxProduct.st!);
       },
     );
   }
