@@ -24,6 +24,5 @@ class ProductServ {
   setSelectedId(Product product) {
     _pv.rxSelectedId.st = product.id;
     debugPrint(_pv.rxSelectedId.st);
-    nav.to(Routes.productDetail);
   }
 }

@@ -27,9 +27,17 @@ class ProductListView extends StatelessWidget {
                         title: Text(data[index].name),
                         subtitle: Text(Fun.formatRupiah.format(data[index].price)),
                         onTap: () {
+                          _dt.rxProductList.setState(
+                            (s) {
+                              return null;
+                            },
+                          );
                           _ct.getReadProductDetail(data[index]);
                           _ct.setSelectedId(data[index]);
+                          nav.to(Routes.productDetail);
                         },
+                        selected: data[index].id == _dt.rxSelectedId.st,
+                        selectedTileColor: Colors.purple,
                       ),
                     ),
                   ),
