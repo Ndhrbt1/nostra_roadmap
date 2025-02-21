@@ -32,4 +32,15 @@ class ProductRepo {
     logx.i(_pv.rxProductList.st[index].toString());
     return _pv.rxProductList.st[index];
   }
+
+  deleteProduct(Product product) {
+    _pv.rxProductList.st.removeWhere((element) => element.id == product.id);
+    nav.back();
+    _pv.rxProductList.setState(
+      (s) {
+        return null;
+      },
+    );
+    debugPrint('product has been deleted');
+  }
 }

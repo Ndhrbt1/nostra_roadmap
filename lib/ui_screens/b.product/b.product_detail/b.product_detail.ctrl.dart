@@ -8,4 +8,6 @@ class ProductDetailCtrl {
   updateRandom() => Serv.sample.updateRandom();
 
   getUpdateProduct(Product product) => _sv.getUpdateProduct(product);
+
+  deleteProduct(Product product) => _sv.deleteProduct(product);
 }
