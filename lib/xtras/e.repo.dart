@@ -6,5 +6,4 @@ abstract class Repo {
 }
 
 final _sampleRepo = RM3.inj(SampleRepo());
-
 final _productRepo = RM3.inj(ProductRepo());

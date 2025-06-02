@@ -20,9 +20,6 @@ final _sampleTigaData = RM1.inj(SampleTigaData(), Ctrl.sampleTiga.init);
 
 final _productData = RM1.inj(ProductData(), Ctrl.product.init);
 final _productListData = RM1.inj(ProductListData(), Ctrl.productList.init);
-
 final _productDetailData = RM1.inj(ProductDetailData(), Ctrl.productDetail.init);
-
 final _productAddData = RM1.inj(ProductAddData(), Ctrl.productAdd.init);
-
 final _productEditData = RM1.inj(ProductEditData(), Ctrl.productEdit.init);

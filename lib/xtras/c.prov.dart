@@ -6,5 +6,4 @@ abstract class Prov {
 }
 
 final _sampleProv = RM2.inj(SampleProv());
-
 final _productProv = RM2.inj(ProductProv());
