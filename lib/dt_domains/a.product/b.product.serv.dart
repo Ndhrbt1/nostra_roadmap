@@ -31,4 +31,6 @@ class ProductServ {
   updateProduct(Product product) => _rp.updateProduct(product);
 
   getUpdateProduct(Product product) => _pv.rxProduct.st = _sv.updateProduct(product);
+
+  deleteProduct(Product product) => _rp.deleteProduct(product);
 }
