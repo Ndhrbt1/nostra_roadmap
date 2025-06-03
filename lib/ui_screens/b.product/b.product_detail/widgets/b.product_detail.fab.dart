@@ -7,9 +7,10 @@ class ProductDetailFab extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       child: const Icon(Icons.update),
-      onPressed: () {
-        _ct.getUpdateProduct(_dt.rxProduct.st!);
-      },
+      // onPressed: () {
+      //   _ct.getUpdateProduct(_dt.rxProduct.st!);
+      // },
+      onPressed: () => nav.to(Routes.productEdit),
     );
   }
 }

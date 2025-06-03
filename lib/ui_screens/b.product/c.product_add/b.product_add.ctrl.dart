@@ -17,6 +17,8 @@ class ProductAddCtrl {
     );
 
     _dt.rxProductList.st = [..._dt.rxProductList.st]..insert(0, product);
+    logx.i('product added');
+
     nav.back();
   }
 
