@@ -19,21 +19,16 @@ class HomeView extends StatelessWidget {
             // HomeDelta(),
             // HomeEcho(),
             ElevatedButton(
-              onPressed: () => nav.to(Routes.sampleSatu),
+              onPressed: () => nav.to(Routes.product),
               child: const Text(
-                "to sample_satu",
+                "to SDP 1",
               ),
             ),
+            const SizedBox(height: 10),
             ElevatedButton(
-              onPressed: () => nav.to(Routes.sampleDua),
+              onPressed: () => nav.to(Routes.productList),
               child: const Text(
-                "to sample_dua",
-              ),
-            ),
-            ElevatedButton(
-              onPressed: () => nav.to(Routes.sampleTiga),
-              child: const Text(
-                "to sample_tiga",
+                "to SDP 2",
               ),
             ),
           ],

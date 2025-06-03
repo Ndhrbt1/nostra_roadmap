@@ -7,9 +7,8 @@ class ProductListFab extends StatelessWidget {
   Widget build(BuildContext context) {
     return FloatingActionButton(
       child: const Icon(Icons.add),
-      onPressed: () {
-        _ct.addProduct();
-      },
+      // onPressed: () => _ct.addProduct(),
+      onPressed: () => nav.to(Routes.productAdd),
     );
   }
 }

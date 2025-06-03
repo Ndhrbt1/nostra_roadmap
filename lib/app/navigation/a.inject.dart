@@ -1,6 +1,6 @@
 part of '_index.dart';
 
 final nav = NavigationBuilder.create(
-  initialLocation: Routes.productList,
+  initialLocation: Routes.home,
   routes: RouteMap.data,
 );
