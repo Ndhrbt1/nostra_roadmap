@@ -17,50 +17,11 @@ class ProductAddView extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              OnFormBuilder(
-                listenTo: _dt.rxForm,
-                builder: () => TextField(
-                  controller: _dt.rxProductName.controller,
-                  decoration: InputDecoration(
-                    border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                    hintText: 'input product name',
-                    label: const Text('product name'),
-                    errorText: _dt.rxProductName.error,
-                  ),
-                ),
-              ),
+              const ProductAddName(),
               const SizedBox(height: 20),
-              OnFormBuilder(
-                listenTo: _dt.rxForm,
-                builder: () => TextField(
-                  controller: _dt.rxPrice.controller,
-                  decoration: InputDecoration(
-                      hintText: 'input price',
-                      label: const Text('product price'),
-                      border: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      errorText: _dt.rxPrice.error),
-                ),
-              ),
+              const ProductAddPrice(),
               const SizedBox(height: 20),
-              OnFormBuilder(
-                listenTo: _dt.rxForm,
-                builder: () => TextField(
-                  controller: _dt.rxQty.controller,
-                  decoration: InputDecoration(
-                      hintText: 'input quantity',
-                      label: const Text('product quantity'),
-                      border: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      errorText: _dt.rxQty.error),
-                ),
-              ),
+              const ProductAddQty(),
               const SizedBox(height: 20),
               OnFormBuilder(
                 listenTo: _dt.rxForm,

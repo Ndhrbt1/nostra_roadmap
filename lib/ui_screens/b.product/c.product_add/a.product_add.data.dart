@@ -10,7 +10,7 @@ class ProductAddData {
   final rxProductList = _pv.rxProductList;
 
   final rxForm = RM.injectForm(
-    submit: () async => await _ct.addProductList(),
+    submit: () async => await _ct.addProduct(),
     autovalidateMode: AutovalidateMode.onUserInteraction,
   );
 

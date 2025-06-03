@@ -7,18 +7,14 @@ class ProductAddCtrl {
 
   updateRandom() => Serv.sample.updateRandom();
 
-  Future<void> addProductList() async {
-    final product = Product(
+  addProduct() {
+    _sv.addProduct(Product(
       id: UniqueKey().toString().substring(2, 7),
       name: _dt.rxProductName.value,
       price: int.parse(_dt.rxPrice.value),
       qty: int.parse(_dt.rxQty.value),
       createdAt: DateTime.now().toString(),
-    );
-
-    _dt.rxProductList.st = [..._dt.rxProductList.st]..insert(0, product);
-    logx.i('product added');
-
+    ));
     nav.back();
   }
 

@@ -17,55 +17,16 @@ class ProductEditView extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              OnFormBuilder(
-                listenTo: _dt.rxForm,
-                builder: () => TextField(
-                  controller: _dt.rxProductName.st.controller,
-                  decoration: InputDecoration(
-                    border: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(8))),
-                    hintText: 'edit product name',
-                    label: const Text('product name'),
-                    errorText: _dt.rxProductName.error,
-                  ),
-                ),
-              ),
+              const ProductEditName(),
               const SizedBox(height: 20),
-              OnFormBuilder(
-                listenTo: _dt.rxForm,
-                builder: () => TextField(
-                  controller: _dt.rxPrice.st.controller,
-                  decoration: InputDecoration(
-                      hintText: 'edit price',
-                      label: const Text('product price'),
-                      border: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      errorText: _dt.rxPrice.error),
-                ),
-              ),
+              const ProductEditPrice(),
               const SizedBox(height: 20),
-              OnFormBuilder(
-                listenTo: _dt.rxForm,
-                builder: () => TextField(
-                  controller: _dt.rxQty.st.controller,
-                  decoration: InputDecoration(
-                      hintText: 'edit quantity',
-                      label: const Text('product quantity'),
-                      border: const OutlineInputBorder(
-                        borderRadius: BorderRadius.all(
-                          Radius.circular(8),
-                        ),
-                      ),
-                      errorText: _dt.rxQty.error),
-                ),
-              ),
+              const ProductEditQty(),
               const SizedBox(height: 20),
               OnFormBuilder(
                 listenTo: _dt.rxForm,
                 builder: () => ElevatedButton(
-                  onPressed: () => _ct.submitEdit(),
+                  onPressed: () => _ct.submit(),
                   child: const Text('submit'),
                 ),
               ),

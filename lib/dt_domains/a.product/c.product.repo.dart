@@ -21,12 +21,11 @@ class ProductRepo {
     return _pv.rxProductList.st[index];
   }
 
-  addProduct() {
-    _pv.rxProductList.st = [..._pv.rxProductList.st]..insert(0, Product.random());
+  addProduct(product) {
+    _pv.rxProductList.st = [..._pv.rxProductList.st]..insert(0, product);
   }
 
-  updateProduct(Product product) {
-    Product newProduct = Product.update(product);
+  updateProduct(Product newProduct) {
     final index = _pv.rxProductList.st.indexWhere((element) => element.id == newProduct.id);
     _pv.rxProductList.setState((s) => s[index] = newProduct);
     logx.i(_pv.rxProductList.st[index].toString());

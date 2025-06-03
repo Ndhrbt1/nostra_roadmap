@@ -13,5 +13,5 @@ class ProductListCtrl {
 
   setSelectedId(Product product) => _sv.setSelectedId(product);
 
-  addProduct() => _sv.addProduct();
+  addProduct(product) => _sv.addProduct(product);
 }

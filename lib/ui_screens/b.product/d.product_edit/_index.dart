@@ -1,5 +1,3 @@
-import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:nostra_roadmap/dt_domains/_models/_index.dart';
 import 'package:nostra_roadmap/dt_domains/a.product/_index.dart';
@@ -13,10 +11,11 @@ part 'b.product_edit.ctrl.dart';
 part 'c.product_edit.view.dart';
 part 'widgets/a.product_edit.appbar.dart';
 part 'widgets/b.product_edit.fab.dart';
-part 'widgets/c.product_edit.charlie.dart';
-part 'widgets/d.product_edit.delta.dart';
-part 'widgets/e.product_edit.echo.dart';
+part 'widgets/c.product_edit.name.dart';
+part 'widgets/d.product_edit.price.dart';
+part 'widgets/e.product_edit.qty.dart';
 
 ProductEditData get _dt => Data.productEdit.st;
 ProductEditCtrl get _ct => Ctrl.productEdit;
 ProductProv get _pv => Prov.product.st;
+ProductServ get _sv => Serv.product;
